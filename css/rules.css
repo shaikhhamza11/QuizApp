@@ -7,3 +7,12 @@
 li {
   list-style: disc;
 }
+
+@media only screen and (max-width: 768px) {
+  .rules-container {
+    width: 100%;
+  }
+  .rules-container ul {
+    font-size: 1.5rem;
+  }
+}
