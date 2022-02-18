@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url(../css/variables.css);
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+}
+
+/*header  */
+#header {
+  font-size: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  color: var(--txt-color-dark);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: var(--header-color);
+}
+#navbar ul li {
+  list-style-type: none;
+  padding: 0 2rem;
+  font-size: 2rem;
+  position: relative;
+}
+#navbar i {
+  cursor: pointer;
+}
+
+#navbar .toggle {
+  display: flex;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+#sun {
+  display: none;
+}
+#hamburger {
+  display: none;
+}
+#close-navbar {
+  display: none;
+}
+
+/* course quiz */
+#quiz-list {
+  padding: 4rem 6rem;
+}
+.quiz-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.quiz {
+  width: 40rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.quiz img {
+  width: 100%;
+  border-radius: 2rem;
+  min-height: 30rem;
+}
+.quiz .quiz-description {
+  padding: 2rem 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  /* header */
+  #navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30rem;
+    background: var(--bg-primary);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
+    padding: 8rem 0 1rem 0;
+    display: none;
+    transition: 0.3s;
+  }
+  #close-navbar {
+    display: flex;
+    position: absolute;
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 24px;
+  }
+  #navbar ul li {
+    margin-bottom: 2.5rem;
+  }
+  .menu {
+    display: none;
+  }
+  #hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #hamburger a {
+    padding: 0 1rem;
+    margin: 0.4rem;
+    font-size: 2rem;
+  }
+  #hamburger .active {
+    display: flex;
+  }
+  .navbar-brand {
+    text-align: center;
+  }
+}
