@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeagerist | Quiz show</title>
+    <!-- component library -->
+    <link
+      rel="stylesheet"
+      href="https://encoreui.netlify.app/components/index.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/rules.css" />
+    <!-- font awesone -->
+    <script
+      src="https://kit.fontawesome.com/ea8d1510f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header" class="flex align-center justify-sb p-2-5 fw-bold">
+      <a href="#" class="navbar-brand fs-3">Yeagerist</a>
+      <nav id="navbar">
+        <ul class="flex align-center justify-sb p-2" id="navbar-lists">
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Signup</a>
+          </li>
+          <i class="fa-solid fa-moon fa-1x ml-2" id="moon"></i>
+          <i class="fa-solid fa-sun fa-1x ml-2" id="sun"></i>
+          <i class="fa-solid fa-xmark fa-1x" id="close-navbar"></i>
+        </ul>
+      </nav>
+
+      <div id="hamburger">
+        <i class="fa-solid fa-bars" id="bar"></i>
+      </div>
+    </header>
+
+    <section id="rules" class="mt-3 flex align-center justify-center">
+      <div class="rules-container cards-shadow">
+        <h1 class="fs-xl center">Rules</h1>
+        <ul class="fs-m">
+          <li class="mt-2">
+            <strong class="fs-l">Question:</strong> The quiz has total 5
+            questions. For every question there will be four options with one correct option 
+          </li>
+          <li class="mt-2">
+            <strong>Points:</strong> 
+             With a correct answer, player can add 10 points to the
+              Total and -5 for every wrong answer
+            </strong>
+          </li>
+          <li class="mt-2"><strong>Time Limit:</strong> 30 sec per question</li>
+          <li class="mt-2"><strong>Conferring:</strong> Not allowed to switch tabs</li>
+          <li class="mt-2"><strong>Result:</strong> Result will be in %. Share the result with your friends and compete </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
