@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeagerist | Quiz show</title>
+    <!-- component library -->
+    <link
+      rel="stylesheet"
+      href="https://encoreui.netlify.app/components/index.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/question.css" />
+    <!-- font awesone -->
+    <script
+      src="https://kit.fontawesome.com/ea8d1510f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header" class="flex align-center justify-sb p-2-5 fw-bold">
+      <a href="#" class="navbar-brand fs-3">Yeagerist</a>
+      <nav id="navbar">
+        <ul class="flex align-center justify-sb p-2" id="navbar-lists">
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Signup</a>
+          </li>
+          <i class="fa-solid fa-moon fa-1x ml-2" id="moon"></i>
+          <i class="fa-solid fa-sun fa-1x ml-2" id="sun"></i>
+          <i class="fa-solid fa-xmark fa-1x" id="close-navbar"></i>
+        </ul>
+      </nav>
+
+      <div id="hamburger">
+        <i class="fa-solid fa-bars" id="bar"></i>
+      </div>
+    </header>
+
+    <section class="flex column align-center justify-center p-2-5">
+      <div class="questions cards-shadow p-2-5 mt-2">
+        <h1 class="center fs-dxl m-2 pointer">Attack On Titans</h1>
+        <div class="flex justify-sb">
+          <span class="fs-m pointer">Question 1/5</span>
+          <span class="fs-m pointer">Score:0</span>
+        </div>
+        <h2 class="fs-l m-3 pointer center mt-2">
+          What has been terrorizing humans?
+        </h2>
+        <div class="options-container flex justify-center align-center">
+          <button class="options">Snakes</button>
+          <button class="options">Spiders</button>
+          <button class="options">Humans</button>
+          <button class="options bg-success">Titans</button>
+        </div>
+      </div>
+      <div class="questions cards-shadow p-2-5 mt-2">
+        <h1 class="center fs-dxl m-2 pointer">Attack On Titans</h1>
+        <div class="flex justify-sb">
+          <span class="fs-m pointer">Question 2/5</span>
+          <span class="fs-m pointer">Score:10</span>
+        </div>
+        <h2 class="fs-l m-3 pointer center mt-2">
+          Who is Eren's adopted sister?
+        </h2>
+        <div class="options-container flex justify-center align-center">
+          <button class="options bg-danger">Annie Leonhart</button>
+          <button class="options">Shasha braus</button>
+          <button class="options bg-success">Mikasa Ackerman</button>
+          <button class="options">Titans</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
