@@ -7,6 +7,17 @@
 li {
   list-style: disc;
 }
+.rules-container a {
+  /* width: 66%; */
+  text-align: center;
+  padding: 1.7rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
   .rules-container {
