@@ -8,3 +8,9 @@
 .column {
   flex-direction: column;
 }
+.color-success {
+  color: var(--color-success);
+}
+.color-danger {
+  color: var(--color-danger);
+}

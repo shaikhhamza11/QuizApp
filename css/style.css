@@ -122,4 +122,7 @@ body {
   .navbar-brand {
     text-align: center;
   }
+  .quiz {
+    width: 25rem;
+  }
 }

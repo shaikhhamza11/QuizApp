@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeagerist | Quiz show</title>
+    <!-- component library -->
+    <link
+      rel="stylesheet"
+      href="https://encoreui.netlify.app/components/index.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/question.css" />
+    <!-- font awesone -->
+    <script
+      src="https://kit.fontawesome.com/ea8d1510f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header" class="flex align-center justify-sb p-2-5 fw-bold">
+      <a href="../index.html" class="navbar-brand fs-3">Yeagerist</a>
+      <nav id="navbar">
+        <ul class="flex align-center justify-sb p-2" id="navbar-lists">
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Signup</a>
+          </li>
+          <i class="fa-solid fa-moon fa-1x ml-2" id="moon"></i>
+          <i class="fa-solid fa-sun fa-1x ml-2" id="sun"></i>
+          <i class="fa-solid fa-xmark fa-1x" id="close-navbar"></i>
+        </ul>
+      </nav>
+
+      <div id="hamburger">
+        <i class="fa-solid fa-bars" id="bar"></i>
+      </div>
+    </header>
+
+    <section class="flex column align-center justify-center p-2-5">
+      <div class="questions cards-shadow p-2-5 mt-2">
+        <h1 class="center fs-dxl m-2 pointer">Results</h1>
+        <h2 class="fs-l m-3 pointer center">Final Score : 10/50</h2>
+        <div class="result">
+          <div class="flex justify-sb">
+            <span class="fs-m pointer">Question 1/5</span>
+            <span class="fs-m pointer">Score:0</span>
+          </div>
+          <h2 class="fs-l m-3 pointer center">
+            What has been terrorizing humans?
+          </h2>
+          <div class="options-container flex justify-center align-center">
+            <button class="options">Snakes</button>
+            <button class="options">Spiders</button>
+            <button class="options">Humans</button>
+            <button class="options bg-success">Titans</button>
+          </div>
+          <h2 class="fs-m m-2 pointer">
+            <span class="color-success">Correct Answer!:</span> The titans
+            appeared over a century before the start of the series. They have
+            nearly knocked out the human population.
+          </h2>
+        </div>
+        <div class="result mt-4">
+          <div class="flex justify-sb">
+            <span class="fs-m pointer">Question 2/5</span>
+            <span class="fs-m pointer">Score:10</span>
+          </div>
+          <h2 class="fs-l m-3 pointer center mt-2">
+            Who is Eren's adopted sister?
+          </h2>
+          <div class="options-container flex justify-center align-center">
+            <button class="options bg-danger">Annie Leonhart</button>
+            <button class="options">Shasha braus</button>
+            <button class="options bg-success">Mikasa Ackerman</button>
+            <button class="options">Titans</button>
+          </div>
+          <h2 class="fs-m m-2 pointer">
+            <span class="color-danger">Wrong Answer:</span> Mikasa's parents
+            were killed when she was a young girl. With no place to go, Eren
+            told her she would come home with him and his father.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
